@@ -15246,7 +15246,7 @@ a.dynamicLink {
       margin-left: 38px; }
     .aom-bubble .note-letter.key-E, .aom-bubble .note-letter.key-B {
       margin-left: 48px; }
-    .aom-bubble .note-letter:first::before {
+    .aom-bubble .note-letter:first-child::before {
       content: 'Note Names:';
       position: absolute;
       display: block;
@@ -15963,7 +15963,7 @@ a.dynamicLink {
     margin-left: 38px; }
   .note-letter.key-E, .note-letter.key-B {
     margin-left: 48px; }
-  .note-letter:first::before {
+  .note-letter:first-child::before {
     content: 'Note Names:';
     position: absolute;
     display: block;
