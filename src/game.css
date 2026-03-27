@@ -15381,26 +15381,29 @@ a.dynamicLink {
     font-family: 'Moon-Flower-Bold' !important; }
   .aom-bubble .countdown {
     border: 1px solid #ccc;
-    width: 250px;
-    height: 135px;
+    width: 200px;
     text-align: center;
     background: #f1f1f1;
-    border-radius: 5px;
-    margin: auto; }
+    border-radius: 12px;
+    margin: 24px auto;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .aom-bubble .countdown .timer-btn {
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background 0.2s; }
+      .aom-bubble .countdown .timer-btn:hover {
+        background: rgba(0,0,0,0.08); }
     .aom-bubble .countdown .tiles {
       color: #fff;
-      position: relative;
-      z-index: 1;
-      text-shadow: 1px 1px 0px #ccc;
-      display: inline-block;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
       text-align: center;
-      padding: 20px;
-      border-radius: 4px 4px 0 0;
-      font-size: 50px;
-      font-weight: thin;
-      display: block; }
+      padding: 16px 20px;
+      font-size: 48px;
+      font-weight: 300;
+      display: block;
+      letter-spacing: 4px; }
       .aom-bubble .countdown .tiles.color-full {
         background: #61B136; }
       .aom-bubble .countdown .tiles.color-half {
@@ -15408,23 +15411,21 @@ a.dynamicLink {
       .aom-bubble .countdown .tiles.color-empty {
         background: #FF5335; }
       .aom-bubble .countdown .tiles > span {
-        width: 70px;
-        max-width: 70px;
-        padding: 18px 0;
         position: relative; }
     .aom-bubble .countdown .countdown-label {
-      font-size: 16px;
+      font-size: 13px;
       color: #65584c;
       text-align: center;
       text-transform: uppercase;
-      display: inline-block;
       letter-spacing: 2px;
-      margin-top: 9px; }
+      padding: 10px 0; }
   .aom-bubble .countdownPrompts {
     text-align: center;
-    margin-top: 20px; }
+    margin: 16px auto;
+    max-width: 500px; }
     .aom-bubble .countdownPrompts .title {
-      text-decoration: underline; }
+      font-size: 14px;
+      color: #666; }
 
 @font-face {
   .aom-bubble {
@@ -15611,9 +15612,11 @@ a.dynamicLink {
   .fullpage .wrapper {
     background: #EEE7C8;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow-y: auto; }
   .fullpage .quest-title {
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 16px; }
   .fullpage .btn-close-embedded {
     position: fixed;
     right: 15px;
@@ -16148,26 +16151,29 @@ a.dynamicLink {
 
 .countdown {
   border: 1px solid #ccc;
-  width: 250px;
-  height: 135px;
+  width: 200px;
   text-align: center;
   background: #f1f1f1;
-  border-radius: 5px;
-  margin: auto; }
+  border-radius: 12px;
+  margin: 24px auto;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .countdown .timer-btn {
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s; }
+    .countdown .timer-btn:hover {
+      background: rgba(0,0,0,0.08); }
   .countdown .tiles {
     color: #fff;
-    position: relative;
-    z-index: 1;
-    text-shadow: 1px 1px 0px #ccc;
-    display: inline-block;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
     text-align: center;
-    padding: 20px;
-    border-radius: 4px 4px 0 0;
-    font-size: 50px;
-    font-weight: thin;
-    display: block; }
+    padding: 16px 20px;
+    font-size: 48px;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 4px; }
     .countdown .tiles.color-full {
       background: #61B136; }
     .countdown .tiles.color-half {
@@ -16175,24 +16181,22 @@ a.dynamicLink {
     .countdown .tiles.color-empty {
       background: #FF5335; }
     .countdown .tiles > span {
-      width: 70px;
-      max-width: 70px;
-      padding: 18px 0;
       position: relative; }
   .countdown .countdown-label {
-    font-size: 16px;
+    font-size: 13px;
     color: #65584c;
     text-align: center;
     text-transform: uppercase;
-    display: inline-block;
     letter-spacing: 2px;
-    margin-top: 9px; }
+    padding: 10px 0; }
 
 .countdownPrompts {
   text-align: center;
-  margin-top: 20px; }
+  margin: 16px auto;
+  max-width: 500px; }
   .countdownPrompts .title {
-    text-decoration: underline; }
+    font-size: 14px;
+    color: #666; }
 
 /*
  * Copyright (c) 2020, salesforce.com, inc.
