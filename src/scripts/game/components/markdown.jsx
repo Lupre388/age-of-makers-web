@@ -113,6 +113,11 @@ class MarkdownRenderer extends Component {
         // Default code snippet
         return <pre><code className={className}>{value}</code></pre>
       },
+      a: ({ href, children }) => {
+        return (
+          <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+        );
+      },
       img: ({ src, alt }) => {
         return (
           <img
