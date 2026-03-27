@@ -15380,14 +15380,16 @@ a.dynamicLink {
   .aom-bubble .moonFlowerFont {
     font-family: 'Moon-Flower-Bold' !important; }
   .aom-bubble .countdown {
-    border: 1px solid #ccc;
-    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 180px;
     text-align: center;
-    background: #f1f1f1;
+    background: #f5f5f0;
     border-radius: 12px;
-    margin: 24px auto;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
     .aom-bubble .countdown .timer-btn {
       cursor: pointer;
       padding: 4px 8px;
@@ -15399,8 +15401,8 @@ a.dynamicLink {
       color: #fff;
       text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
       text-align: center;
-      padding: 16px 20px;
-      font-size: 48px;
+      padding: 14px 16px;
+      font-size: 40px;
       font-weight: 300;
       display: block;
       letter-spacing: 4px; }
@@ -15413,19 +15415,31 @@ a.dynamicLink {
       .aom-bubble .countdown .tiles > span {
         position: relative; }
     .aom-bubble .countdown .countdown-label {
-      font-size: 13px;
+      font-size: 11px;
       color: #65584c;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      padding: 10px 0; }
+      letter-spacing: 1px;
+      padding: 8px 0; }
   .aom-bubble .countdownPrompts {
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    z-index: 999;
+    width: 250px;
     text-align: center;
-    margin: 16px auto;
-    max-width: 500px; }
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    border-left: 3px solid #61B136; }
     .aom-bubble .countdownPrompts .title {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 4px; }
+    .aom-bubble .countdownPrompts .blockquote {
       font-size: 14px;
-      color: #666; }
+      margin: 0; }
 
 @font-face {
   .aom-bubble {
@@ -16150,14 +16164,16 @@ a.dynamicLink {
   font-family: 'Moon-Flower-Bold' !important; }
 
 .countdown {
-  border: 1px solid #ccc;
-  width: 200px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 180px;
   text-align: center;
-  background: #f1f1f1;
+  background: #f5f5f0;
   border-radius: 12px;
-  margin: 24px auto;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
   .countdown .timer-btn {
     cursor: pointer;
     padding: 4px 8px;
@@ -16169,8 +16185,8 @@ a.dynamicLink {
     color: #fff;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
     text-align: center;
-    padding: 16px 20px;
-    font-size: 48px;
+    padding: 14px 16px;
+    font-size: 40px;
     font-weight: 300;
     display: block;
     letter-spacing: 4px; }
@@ -16183,20 +16199,32 @@ a.dynamicLink {
     .countdown .tiles > span {
       position: relative; }
   .countdown .countdown-label {
-    font-size: 13px;
+    font-size: 11px;
     color: #65584c;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 0; }
+    letter-spacing: 1px;
+    padding: 8px 0; }
 
 .countdownPrompts {
+  position: fixed;
+  bottom: 130px;
+  right: 20px;
+  z-index: 999;
+  width: 250px;
   text-align: center;
-  margin: 16px auto;
-  max-width: 500px; }
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-left: 3px solid #61B136; }
   .countdownPrompts .title {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px; }
+  .countdownPrompts .blockquote {
     font-size: 14px;
-    color: #666; }
+    margin: 0; }
 
 /*
  * Copyright (c) 2020, salesforce.com, inc.
