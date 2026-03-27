@@ -15357,14 +15357,31 @@ a.dynamicLink {
       .aom-bubble .quizWrapper .quizForm .edit-btn {
         margin: 0 20px; }
     .aom-bubble .quizWrapper .quizQuestionHelper {
-      margin: 10px 0; }
+      margin: 16px 0; }
       .aom-bubble .quizWrapper .quizQuestionHelper .helpersToggle {
         text-align: right;
         margin-right: 10px; }
       .aom-bubble .quizWrapper .quizQuestionHelper .helpersContent {
         transition: height 300ms ease-in-out;
         height: 0;
-        overflow: hidden; }
+        overflow: hidden;
+        background: #f8f6f0;
+        border-radius: 8px;
+        padding: 0 20px;
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #555; }
+        .aom-bubble .quizWrapper .quizQuestionHelper .helpersContent[style*="auto"] {
+          padding: 16px 20px; }
+        .aom-bubble .quizWrapper .quizQuestionHelper .helpersContent ul {
+          padding-left: 20px; }
+        .aom-bubble .quizWrapper .quizQuestionHelper .helpersContent li {
+          margin-bottom: 4px; }
+        .aom-bubble .quizWrapper .quizQuestionHelper .helpersContent hr {
+          border: none;
+          border-top: 1px solid #ddd;
+          margin: 16px 0; }
 
 @font-face {
   .aom-bubble {
@@ -16122,14 +16139,31 @@ a.dynamicLink {
     .quizWrapper .quizForm .edit-btn {
       margin: 0 20px; }
   .quizWrapper .quizQuestionHelper {
-    margin: 10px 0; }
+    margin: 16px 0; }
     .quizWrapper .quizQuestionHelper .helpersToggle {
       text-align: right;
       margin-right: 10px; }
     .quizWrapper .quizQuestionHelper .helpersContent {
       transition: height 300ms ease-in-out;
       height: 0;
-      overflow: hidden; }
+      overflow: hidden;
+      background: #f8f6f0;
+      border-radius: 8px;
+      padding: 0 20px;
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #555; }
+      .quizWrapper .quizQuestionHelper .helpersContent[style*="auto"] {
+        padding: 16px 20px; }
+      .quizWrapper .quizQuestionHelper .helpersContent ul {
+        padding-left: 20px; }
+      .quizWrapper .quizQuestionHelper .helpersContent li {
+        margin-bottom: 4px; }
+      .quizWrapper .quizQuestionHelper .helpersContent hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 16px 0; }
 
 /*
  * Copyright (c) 2020, salesforce.com, inc.
