@@ -100,7 +100,7 @@ class Header extends Component {
       return (
         <li className="nav-item score" key={valleyName} data-helper={`GOAL: Complete ${this.getQuestsNumber(ageData, valleyName)} quests from ${areaData.name}`}>
           <div className={"icon"} style={ {
-            backgroundImage: `url('${ (areaData) ? areaData.image : '/images/Locked_grey.svg'}')`,
+            backgroundImage: `url('${ (areaData) ? areaData.image : '/images/locked_grey.svg'}')`,
           } }></div>
           <p className="value">{addComplete(this.props.journey.quests, valleyName)} / { this.getQuestsNumber(ageData, valleyName) }</p>
         </li> 
