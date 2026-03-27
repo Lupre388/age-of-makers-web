@@ -133,27 +133,22 @@ export default class Countdown extends Component {
   }
 
   renderPrompts() {
-    if (this.props.prompts && this.state.currentPrompt) {
-      return <div className="countdownPrompts">
-        <p className="title"><strong>Feeling stuck?</strong> Try to answer this prompt:</p>
-        <blockquote className="blockquote">
-          <Markdown mdContent={this.state.currentPrompt} />
-        </blockquote>
+    if (this.props.prompts && this.state.currentPrompt && this.state.timerOn) {
+      return <div className="countdown-prompt" onClick={() => this.toggleCountdownView()}>
+        <Markdown mdContent={this.state.currentPrompt} />
       </div>
     }
   }
-  
+
   render() {
     return (
-      <div>
-        <div className="countdown">
-          <div className={ `tiles ${this.getColorClass() }` }>
-            <span>{ this.renderTime('minutes') }:</span><span>{ this.renderTime('seconds') }</span>
-          </div>
-          <div className="countdown-label">{ this.renderCoundownLabel() }</div>
-          <audio src="/images/alarm-clock.mp3" type="audio/mpeg" ref={(ref) => { this.player = ref } }/>
+      <div className="countdown">
+        <div className={ `tiles ${this.getColorClass() }` }>
+          <span>{ this.renderTime('minutes') }:</span><span>{ this.renderTime('seconds') }</span>
         </div>
         { this.renderPrompts() }
+        <div className="countdown-label">{ this.renderCoundownLabel() }</div>
+        <audio src="/images/alarm-clock.mp3" type="audio/mpeg" ref={(ref) => { this.player = ref } }/>
       </div>
     );
   }
