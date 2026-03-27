@@ -2729,7 +2729,7 @@ stages:
     - [RnB in E Major - 123 BPM](https://www.bandlab.com/track/5606509a-7747-e811-80c3-00155d65202b?revId=5506509a-7747-e811-80c3-00155d65202b)
 
     ```info
-    Feeling inspired and rather start from scratch? Open the [Mix Editor](https://www.bandlab.com/mix-editor) to create a brand new track!
+    Feeling inspired and rather start from scratch? Open the [Studio](https://www.bandlab.com/studio) to create a brand new track!
     ```
   order: 1
 - name: Save Your First Track
@@ -2889,7 +2889,7 @@ content: |-
   
   You'll spend some time finding the notes in the scale from different keys.
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://www.bandlab.com/mix-editor
+startUrl: https://www.bandlab.com/studio
 positionLeft: 38
 positionTop: 52
 stages:
@@ -2978,7 +2978,7 @@ content: |-
   
   Now you can see it for yourself by practicing it on a few scales. 🎹🎶
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://www.bandlab.com/mix-editor
+startUrl: https://www.bandlab.com/studio
 positionLeft: 40
 positionTop: 45
 stages:
@@ -3054,7 +3054,7 @@ valley: musiccity
 content: |-
   Put your new skill to practice by going from numbers to music, and see if you can inspire yourself from songs you know.
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://www.bandlab.com/mix-editor
+startUrl: https://www.bandlab.com/studio
 positionLeft: 53
 positionTop: 46.5
 stages:
@@ -3180,7 +3180,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 62
 positionTop: 42
 stages:
@@ -3250,7 +3250,7 @@ content: |-
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 54
 positionTop: 38
 stages:
@@ -3319,7 +3319,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 45
 positionTop: 43
 stages:
@@ -3415,7 +3415,7 @@ content: |-
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 84
 positionTop: 54
 stages:
@@ -3481,7 +3481,7 @@ positionTop: 44
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 stages:
 - name: Build Your Bass
   content: |-
@@ -3859,7 +3859,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 30
 positionTop: 40
 stages:
@@ -3932,7 +3932,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 37
 positionTop: 29
 stages:
@@ -4022,7 +4022,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://www.bandlab.com/mix-editor
+  fallbackUrl: https://www.bandlab.com/studio
 positionLeft: 46.7
 positionTop: 4.5
 stages:
