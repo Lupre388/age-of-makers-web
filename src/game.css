@@ -15693,9 +15693,9 @@ a.dynamicLink {
     .fullpage .aom-warning li {
       margin-bottom: 2px; }
   .fullpage .aom-info {
-    border-left: 3px solid #61B136; }
+    border: none; }
   .fullpage .aom-warning {
-    border-left: 3px solid #FF5335;
+    border: none;
     color: #8b4513; }
   .fullpage .btn-close-embedded {
     position: fixed;
