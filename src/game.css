@@ -16164,6 +16164,25 @@ a.dynamicLink {
         border: none;
         border-top: 1px solid #ddd;
         margin: 16px 0; }
+  .quizWrapper .quizHelpers {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    background: #f0ede4;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.6; }
+    .quizWrapper .quizHelpers textarea {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 13px;
+      resize: none; }
 
 /*
  * Copyright (c) 2020, salesforce.com, inc.

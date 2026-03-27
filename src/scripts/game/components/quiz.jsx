@@ -278,8 +278,8 @@ class Quiz extends Component {
   }
   render() {
     if (this.props.quizData) {
-      return <div className={ `quizWrapper ${(this.props.inline) ? 'inline': 'embedded'} ${ (this.hasQuizResult()) ? 'quizResults' : ''}`}>
-        { (this.props.inline && !this.hasQuizResult()) ? <div className="quizHeader">Answer these questions to complete the quest.</div> : ''}
+      return <div className={ `quizWrapper row ${(this.props.inline) ? 'inline': 'embedded'} ${ (this.hasQuizResult()) ? 'quizResults' : ''}`}>
+        { (this.props.inline && !this.hasQuizResult()) ? <div className="quizHeader col-12">Answer these questions to complete the quest.</div> : ''}
         { this.renderQuestions() }
         { this.renderHelpers() }
       </div>
