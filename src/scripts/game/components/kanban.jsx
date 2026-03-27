@@ -8,21 +8,49 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { } from '../../../actions/index';
 import { getActiveQuestData } from '../../_utils';
-import Board from '@asseinfo/react-kanban'
 
+function Board({ initialBoard }) {
+  if (!initialBoard || !initialBoard.columns) return null;
+
+  return (
+    <div style={{ display: 'flex', gap: '16px', overflowX: 'auto', padding: '8px' }}>
+      {initialBoard.columns.map((column, colIdx) => (
+        <div key={column.id || colIdx} style={{
+          minWidth: '250px',
+          flex: '1',
+          background: '#f4f5f7',
+          borderRadius: '8px',
+          padding: '12px',
+        }}>
+          <h5 style={{ margin: '0 0 12px', fontWeight: 'bold' }}>{column.title}</h5>
+          {(column.cards || []).map((card, cardIdx) => (
+            <div key={card.id || cardIdx} style={{
+              background: 'white',
+              borderRadius: '6px',
+              padding: '10px 12px',
+              marginBottom: '8px',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+            }}>
+              <strong>{card.title}</strong>
+              {card.description && <p style={{ margin: '4px 0 0', fontSize: '0.9em', color: '#666' }}>{card.description}</p>}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 class Kanban extends Component {
   constructor(props) {
       super(props);
-
       this.state = {}
   }
 
   renderKanban() {
     if (this.props.activeQuestData.boards) {
-      return <Board initialBoard={ { columns: this.props.activeQuestData.boards }} disableColumnDrag allowAddCard />
+      return <Board initialBoard={{ columns: this.props.activeQuestData.boards }} />
     }
     else {
       console.error('No boards to show on the kanban.');
@@ -45,7 +73,7 @@ class Kanban extends Component {
     }
     else {
       return <div>Loading</div>
-    }  
+    }
   }
 }
 
@@ -58,7 +86,7 @@ const mapStateToProps = (state) => {
 };
 
 function mapDispatchToProps(dispatch) {
-return bindActionCreators({ }, dispatch);
+  return bindActionCreators({ }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Kanban);

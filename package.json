@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@asseinfo/react-kanban": "^2.2.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "js-yaml": "^4.1.1",
