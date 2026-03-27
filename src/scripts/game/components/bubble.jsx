@@ -53,8 +53,8 @@ class Bubble extends Component {
 
     if (this.props.activeQuestData && this.props.activeQuestData.type === questTypes.WEBSITE) {
       this.props.startQuest(this.props.activeQuest.quest, this.props.currentTab.id);
-
       window.open(getQuestUrl(this.props.activeQuestData, this.props.journey) || '#', '_blank', 'noopener,noreferrer');
+      this.setState({ loading: false });
       return;
     }
     else if (this.props.activeQuestData && this.props.activeQuestData.type === questTypes.EMBEDDED) {

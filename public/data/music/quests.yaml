@@ -2703,88 +2703,51 @@ content: |-
   ```bandlab
   f4285019-30ca-ea11-8b03-501ac51fd70d
   ```
-startUrl: https://edu.bandlab.com
+startUrl: https://www.bandlab.com/join
 positionLeft: 47
 positionTop: 56
 stages:
-- name: Start as a Student
+- name: Create your BandLab Account
   content: |-
-    Let's get your all set-up on BandLab! 💻
+    Let's get you set up on BandLab! 💻
 
-    Click **Start as a Student** from the [BandLab Edu Homepage](https://edu.bandlab.com/).
+    Go to [bandlab.com/join](https://www.bandlab.com/join) and create a free account.
 
-    ![Click Start as a Student](data/music/images/bandlab/start_as_a_student.png)
+    You can sign up with **Google**, **Facebook**, **Apple**, or your **email address**.
+
+    ```warning
+    If you are **not** 18 years old or older, **you must get your parent or guardian to read [BandLab's Terms of Use](https://blog.bandlab.com/terms-of-use/) and agree to them** for you before you use the service.
+    ```
   order: 0
-- name: Enter Invite Code
+- name: Choose a Base Track
   content: |-
-    Then, enter the code that the teacher or volunteer gave you.
+    Now let's pick a base track to start with! Click on one of these tracks to open it, then click the **Fork** button to copy it into your account:
 
-    ![Join Classroom](data/music/images/bandlab/join_classroom_nocode.png)
-
-    ```info
-    You're over 18 y.o. and not working with a teacher or volunteers? You can create a [regular BandLab account](https://www.bandlab.com/sign-up) and fork one of those base tracks:
     - [Hip Hop Trap Beat in C Minor - 91BPM](https://www.bandlab.com/kimikbynight/without-my-cash-hip-hop-trap-beat-in-c-minor-91bpm-37df688f-75bf239?revId=3360d06b-2fca-ea11-8b03-501ac51fd70d)
     - [Dance Beat in F minor - 122BPM](https://www.bandlab.com/kimikbynight/just-dont-dance-track-in-f-minor-122bpm-a48d7155-8deab4d?revId=3a3e7d4c-b5cb-ea11-8b03-501ac51fd70d)
     - [RnB in E Major - 123 BPM](https://www.bandlab.com/kimikbynight/zeekanddestroy-56a985d?revId=9ac8b9db-88cc-ea11-8b03-501ac51fd70d)
     - [Hip Hop Beat in C# Minor - 90BPM](https://www.bandlab.com/kimikbynight/hip-hop-beat-in-c-minor-90bpm-50f51b94-8b7eaaa?revId=a6475c53-31ca-ea11-8b03-501ac51fd70d)
-    ```
-  order: 1
-- name: Sign-up for BandLab
-  content: |-
-    You can now sign-up for BandLab.
-
-    ```warning
-    If you are **not** 18 years old or older, or the applicable age of majority in your jurisdiction, **you must get your parent or guardian to read [Bandlab's Terms of Use](https://blog.bandlab.com/terms-of-use/) and agree to them** for you before you use the service or provide any information to them.
-    ```
-
-    Pick an username and click **Continue**.
-
-    ![Continue button](data/music/images/bandlab/continue_btn.png)
-  order: 2
-- name: Get in the class!
-  content: |-
-    Click on the **Music for Change** classroom to enter.
-
-    ![Music for Change Classroom](data/music/images/bandlab/music_for_change_classroom.png)
-  order: 3
-- name: Choose your genre
-  content: |-
-    In the **Assignments** tab, you'll see a list of example tracks for a few genre.
-    
-    Click on the one you're interested in to get started!
-    
-    ![Assignements](data/music/images/bandlab/assignments.png)
-
-    Make sure to:
-    - Click on **Start Assignments**
-    - Choose **Teacher's Assignment** to start from the example track.
-    
-    ![Assignements](data/music/images/bandlab/start_assignment.png)
 
     ```info
-    Feeling inspired and rather start from scratch? Open the **Mix Editor** from your **Library**.
-
-    ![Assignements](data/music/images/bandlab/new_song.png)
+    Feeling inspired and rather start from scratch? Open the [Mix Editor](https://www.bandlab.com/mix-editor) to create a brand new track!
     ```
-  order: 4
+  order: 1
 - name: Save Your First Track
   content: |-
     Wow! So many buttons! 😱
-    
+
     Don't panic though. We'll go over everything very soon.
 
     For now, simply:
 
     1. Click on **Lyrics/Notes** on the bottom right and put down some of your thoughts about the track.
     2. Click the **Save** button on the top right.
-    3. Voilà! You just saved your first track 😎
-
-    ![Assignements](data/music/images/bandlab/save_your_first_track.png)
+    3. Voila! You just saved your first track 😎
 
     ```info
-    If you've created a brand new track, you'll have to record your voice or some notes instruments in order to save your track.
+    If you've created a brand new track, you'll have to record your voice or some notes/instruments in order to save your track.
     ```
-  order: 5
+  order: 2
 quiz:
   name: Your First Song
   subtitle: |-
@@ -2925,7 +2888,7 @@ content: |-
   
   You'll spend some time finding the notes in the scale from different keys.
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://edu.bandlab.com/library/projects
+startUrl: https://www.bandlab.com/mix-editor
 positionLeft: 38
 positionTop: 52
 stages:
@@ -3013,7 +2976,7 @@ content: |-
   
   Now you can see it for yourself by practicing it on a few scales. 🎹🎶
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://edu.bandlab.com/library/projects
+startUrl: https://www.bandlab.com/mix-editor
 positionLeft: 40
 positionTop: 45
 stages:
@@ -3088,7 +3051,7 @@ valley: musiccity
 content: |-
   Put your new skill to practice by going from numbers to music, and see if you can inspire yourself from songs you know.
 # TODO --> ability to start from the quest quiz response + default start url as a fallback
-startUrl: https://edu.bandlab.com/library/projects
+startUrl: https://www.bandlab.com/mix-editor
 positionLeft: 53
 positionTop: 46.5
 stages:
@@ -3214,7 +3177,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 62
 positionTop: 42
 stages:
@@ -3284,7 +3247,7 @@ content: |-
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 54
 positionTop: 38
 stages:
@@ -3353,7 +3316,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 45
 positionTop: 43
 stages:
@@ -3449,7 +3412,7 @@ content: |-
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 84
 positionTop: 54
 stages:
@@ -3515,7 +3478,7 @@ positionTop: 44
 startUrl:
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 stages:
 - name: Build Your Bass
   content: |-
@@ -3893,7 +3856,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 30
 positionTop: 40
 stages:
@@ -3966,7 +3929,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 37
 positionTop: 29
 stages:
@@ -4056,7 +4019,7 @@ content: |-
 startUrl: 
   questId: bandlab_start
   questionId: songUrl
-  fallbackUrl: https://edu.bandlab.com/library/projects
+  fallbackUrl: https://www.bandlab.com/mix-editor
 positionLeft: 46.7
 positionTop: 4.5
 stages:
