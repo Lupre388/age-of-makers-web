@@ -2914,12 +2914,14 @@ stages:
     
     ➡️ Do this with at least **5 different starting notes**
 
-    ☝️ As you use the notes, practice getting familiar with their letter names, as well as what number degree they are within th emajor scale (the root is always 1).
+    As you use the notes, practice getting familiar with their letter names, as well as what number degree they are within the major scale (the root is always 1).
 
     ```info
-    Here's a quick cheat-sheet from Usean's lesson:
+    **Major Scale Formula:** Whole - Whole - Half - Whole - Whole - Whole - Half
 
-    **TODO!!**
+    Example in C Major: C - D - E - F - G - A - B
+
+    Each note gets a degree number (1-7). The root note is always 1.
     ```
   order: 1
 quiz:
@@ -2988,14 +2990,20 @@ stages:
     
     ➡️ Repeat this exercise with at least **5 different major scales**
 
-    ☝️ For each chords, identify:
+    For each chord, identify:
     - What's the letter name of the root note?
     - Is it major or minor?
 
     ```info
-    Here's a quick cheat-sheet from Usean's lesson:
+    **Triad Chords from a Major Scale:**
+    - 1 (I) = Major
+    - 2 (ii) = Minor
+    - 3 (iii) = Minor
+    - 4 (IV) = Major
+    - 5 (V) = Major
+    - 6 (vi) = Minor
 
-    **TODO!!**
+    A triad = root note + skip one + skip one (1st, 3rd, 5th degrees of the chord's own scale).
     ```
   order: 0
 # quiz:
@@ -3070,12 +3078,16 @@ stages:
     
     ➡️ Repeat this exercise a few times.
 
-    ☝️  You can also look up the chords to a song you like and try to work out what key it's in and what degree of the major scale fits each chord.
+    You can also look up the chords to a song you like and try to work out what key it's in and what degree of the major scale fits each chord.
 
     ```info
-    Here's a quick cheat-sheet from Usean's lesson:
+    **Common Chord Progressions (by number):**
+    - 1 - 5 - 6 - 4 (Pop classic)
+    - 1 - 4 - 5 - 1 (Blues/Rock)
+    - 6 - 4 - 1 - 5 (Emotional/Ballad)
+    - 2 - 5 - 1 (Jazz)
 
-    **TODO!!**
+    Remember: 1, 4, 5 are Major chords / 2, 3, 6 are Minor chords.
     ```
   order: 0
 prerequisites: 
