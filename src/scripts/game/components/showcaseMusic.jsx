@@ -26,8 +26,9 @@ class MusicShowcase extends Component {
 
   startShowcaseBt(showcaseItem) {
     this.toggleShowcaseItemLoading(showcaseItem, true);
-    this.props.startQuest(this.props.activeQuest.quest, this.props.currentTab.id, showcaseItem.order);
     window.open(showcaseItem.startUrl, '_blank', 'noopener,noreferrer');
+    // Mark showcase item as visited immediately (persists to localStorage)
+    this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order);
   }
 
   isQuizOpen(showcaseItem) {
