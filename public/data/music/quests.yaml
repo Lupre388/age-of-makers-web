@@ -3172,6 +3172,7 @@ prerequisites:
 ---
 id: first_chords
 name: Find Your Music's Chords
+type: embedded
 valley: musiccity
 content: |-
   Usean showed you the theory, Kim gave you a walkthrough on how to use your vision for your song and find your chords... Time to put all this knowledge to work! 
@@ -3244,6 +3245,7 @@ prerequisites:
 ---
 id: first_melody
 name: Find Your Melody
+type: embedded
 valley: musiccity
 content: |-
   Add the icing on the cake with what most probably be the most memorable part of your track: your melody! 💃🕺🏻
@@ -3313,6 +3315,7 @@ prerequisites:
 --- 
 id: expand_instru
 name: Expand Your Instrumental
+type: embedded
 valley: musiccity
 content: |-
   Now that you have all your musical piece and you've seen how Kim does it, it's time to expand your own song!
@@ -3409,6 +3412,7 @@ prerequisites:
 --- 
 id: build_drums
 name: Build Your Drums
+type: embedded
 valley: beats
 content: |-
   Time for your build (or edit) your drums!
@@ -3473,6 +3477,7 @@ prerequisites:
 --- 
 id: bass_basics
 name: Get Your Bass
+type: embedded
 valley: beats
 content: |-
   Time to add some depth to your beat with your last rhythmic element: your bass.
@@ -3853,6 +3858,7 @@ prerequisites:
 --- 
 id: lyrics_record
 name: Record Your Lyrics
+type: embedded
 valley: lyrics
 content: |-
   Whether you've started from scratch or use a base track, it's time to add some concrete meaning to your song and put your voice on top of your instrumental!
@@ -3926,6 +3932,7 @@ prerequisites:
 --- 
 id: mixing_volumes
 name: It All Starts With Volumes
+type: embedded
 valley: mixing
 content: |-
   Based on what Kim explained you in the previous quest, listen to your song and adjusts your volumes.
@@ -4016,6 +4023,7 @@ prerequisites:
 --- 
 id: share_track
 name: Share Your Track!
+type: embedded
 valley: mixing
 content: |-
   Time to share your story with the world!
