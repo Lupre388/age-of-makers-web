@@ -16170,18 +16170,29 @@ a.dynamicLink {
     align-self: start;
     max-height: calc(100vh - 2rem);
     overflow-y: auto;
-    background: #f0ede4;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 14px;
-    line-height: 1.6; }
-    .quizWrapper .quizHelpers textarea {
+    background: transparent;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #777;
+    border-left: 2px solid #d4cfc4; }
+    .quizWrapper .quizHelpers h5,
+    .quizWrapper .quizHelpers h6,
+    .quizWrapper .quizHelpers strong {
+      color: #555;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px; }
+    .quizWrapper .quizHelpers textarea,
+    .quizWrapper .quizHelpers .form-control:disabled {
       width: 100%;
-      background: #fff;
-      border: 1px solid #ddd;
+      background: #f8f6f0;
+      border: 1px solid #e0dbd0;
       border-radius: 6px;
-      padding: 10px;
+      padding: 12px;
       font-size: 13px;
+      line-height: 1.5;
+      color: #666;
       resize: none; }
 
 /*
