@@ -1,0 +1,133 @@
+# Copyright (c) 2020, salesforce.com, inc.
+# All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause
+# For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+- index: 0
+  name: Discovery
+  image: data/music/images/map-music-0.jpg
+  position:
+  - 18
+  - 45
+  requirements:
+    changemaker: 1
+  walkthrough:
+    - content: |-
+        ### Welcome to the Age of Makers!
+
+        In this game, you're starting your own adventure to create your very first song. 🎧🤩
+        
+        It might change the world, so no time to waste, let's get to it! 😎🚀
+      placement: center
+      target: body
+    - content: |-
+        Click next.
+      placement: right
+      target: ".welcome_quest"
+    - content: |-
+        See all those pins on the map? 👀
+        
+        Each pin is a quest that guides you on your music journey. 🏞
+
+        Let's get started by clicking the pin, then hit next.
+      placementBeacon: top
+      placement: left
+      openQuest: "welcome_quest"
+      target: ".welcome_quest"
+    - content: |-
+        Here are the details of your first quest.
+        
+        ➡️ Click on the red button to get started. 
+        
+        Have fun! 🙌
+      placementBeacon: top
+      placement: left
+      # spotlightClicks: true
+      target: ".aom-bubble"
+- index: 1
+  name: Learning
+  image: data/music/images/map-music-1.jpg
+  position:
+  - 30
+  - 55
+  requirements:
+    musiccity: 2
+    changemaker: 2
+  walkthrough:
+    - content: |-
+        ### Congrats! 💪🥳
+
+        You've just completed your first age. Welcome to Age II, the age of Learning. 😎
+
+        Each new age unlocks more quests and shows you a bigger map. 🗺
+      placement: bottom
+      placementBeacon: top
+      target: ".age"
+    - content: |-
+        This section tells you how many completed quests you need to get to the next age.
+
+        So, can you make it to Age III?? 🤨
+      placementBeacon: top
+      placement: left
+      spotlightClicks: true
+      target: ".badgeTrackersHeader"
+- index: 2
+  name: Producing
+  image: data/music/images/map-music-2.jpg
+  position:
+  - 50
+  - 50
+  requirements:
+    lyrics: 3
+    beats: all
+    musiccity: 18
+    changemaker: 2
+    # total: 8
+  walkthrough:
+    - content: |-
+        ### The time has come...
+
+        You've made it to the age of Producing. 😎
+
+        You can now start working on your instrumental and lyrics. 🎤🎹🎶
+        
+        This is the most creative and exciting part! Can't wait to hear what you produce. 😍👂✨
+      placement: bottom
+      placementBeacon: top
+      target: ".age"
+- index: 3
+  name: Mixing
+  image: data/music/images/map-music-all.jpg
+  position:
+  - 76
+  - 41
+  requirements:
+    mixing: 4
+  walkthrough:
+    - content: |-
+        ### BOOM! 🎙💨
+
+        Wow... Great job in putting your song together, that was quite some work. 👌
+
+        Time to add the final touches now, and get your music ready for prime time. 💃🕺
+      placement: bottom
+      placementBeacon: top
+      target: ".age"
+- index: 4
+  name: Producer 😎🎧
+  image: data/music/images/map-music-all.jpg
+  position:
+  - 80
+  - 41
+  requirements: {}
+  walkthrough:
+    - content: |-
+        ### Oh my... 😏
+
+        You made it to the top! 😱 #soGood #soProud
+        
+        Don't stop there though, keep learning and make more songs! 
+        
+        It only gets better from there. #cantStopWontStop 🚀
+      placement: center
+      target: body
