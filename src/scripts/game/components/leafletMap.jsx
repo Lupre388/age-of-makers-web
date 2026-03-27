@@ -7,11 +7,11 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import { MapContainer, Marker, ImageOverlay } from 'react-leaflet';
-import {CRS, Icon, divIcon} from 'leaflet';
 import { bindActionCreators } from 'redux';
 import { questUnlocked, getAge, isLoggedInAndLoaded, getActivePlayerData, getAreaIconUrl } from '../../_utils';
 import { selectQuest, toggleBubble, openTree, getQuests } from '../../../actions/index';
+
+let MapContainer, Marker, ImageOverlay, CRS, Icon, divIcon;
 
 class Leaflet extends Component {
     constructor(props) {
@@ -21,19 +21,28 @@ class Leaflet extends Component {
             lng: 45,
             zoom: 4.25,
             leafletMap: null,
+            leafletLoaded: false,
         }
     }
 
     componentDidMount() {
-      // if(this.props.journey.quests && (this.props.journey.quests.length === 0 || this.props.journey.quests.error)) {
-      //   console.log('Loading quests', this.props.getQuests());
-      // }
+      // Dynamically import leaflet to avoid requestAnimationFrame issues
+      Promise.all([
+        import('react-leaflet'),
+        import('leaflet'),
+      ]).then(([reactLeaflet, leaflet]) => {
+        MapContainer = reactLeaflet.MapContainer;
+        Marker = reactLeaflet.Marker;
+        ImageOverlay = reactLeaflet.ImageOverlay;
+        CRS = leaflet.CRS;
+        Icon = leaflet.Icon;
+        divIcon = leaflet.divIcon;
+        this.setState({ leafletLoaded: true });
+      });
     }
 
     componentDidUpdate() {
-      // If the leafletMap was already initialized
       if (this.state && this.state.leafletMap) {
-        // We move the map with a nice animation
         this.state.leafletMap.flyTo(this.getPosition(), this.state.zoom);
       }
     }
@@ -94,7 +103,7 @@ class Leaflet extends Component {
           }
           position={[57,35]}
           eventHandlers={{
-            click: () => this.props.openTree() /*openProfile*/ 
+            click: () => this.props.openTree()
           }}
           />;
       }
@@ -111,7 +120,6 @@ class Leaflet extends Component {
           return `images/map-${this.props.activePlayerData.journey}-${index}.jpg`;
         }
       }
-      // Default is first age map #placeholder
       else {
         return `data/music/images/map-music-0.jpg`;
       }
@@ -131,6 +139,10 @@ class Leaflet extends Component {
     }
 
     render() {
+        if (!this.state.leafletLoaded) {
+          return <div className="leafletMap" style={{ height: '100%', background: '#1a1a2e' }} />;
+        }
+
         return (
           <MapContainer
             classname={`leafletMap`}
@@ -144,7 +156,6 @@ class Leaflet extends Component {
             zoomSnap='0.25'
             zoomDelta='0.25'
             whenReady={(map) => {
-              // Store the reference to the leaflet map object in the state
               this.setState({
                 leafletMap: map.target
               })
@@ -154,7 +165,6 @@ class Leaflet extends Component {
                 bounds={[[0,0], [100,100]]}
                 url={ this.getMapImageUrl() }
               />
-              {/* { this.renderTent() } */}
               { this.renderPins() }
           </MapContainer>
         )
