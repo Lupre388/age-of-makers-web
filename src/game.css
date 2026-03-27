@@ -15640,8 +15640,36 @@ a.dynamicLink {
     width: 100%;
     overflow-y: auto; }
   .fullpage .quest-title {
-    margin-top: 30px;
-    margin-bottom: 16px; }
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-size: 1.8em;
+    font-weight: 600; }
+  .fullpage .col-sm-10 {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444; }
+    .fullpage .col-sm-10 h5 {
+      color: #666;
+      margin-bottom: 16px; }
+    .fullpage .col-sm-10 p {
+      margin-bottom: 12px; }
+    .fullpage .col-sm-10 ul {
+      margin-bottom: 16px;
+      padding-left: 20px; }
+    .fullpage .col-sm-10 li {
+      margin-bottom: 4px; }
+    .fullpage .col-sm-10 strong {
+      color: #333; }
+    .fullpage .col-sm-10 pre {
+      background: #f8f6f0;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      color: #555; }
   .fullpage .btn-close-embedded {
     position: fixed;
     right: 15px;
