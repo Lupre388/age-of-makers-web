@@ -25,7 +25,6 @@ class MusicShowcase extends Component {
   }
 
   startShowcaseBt(showcaseItem) {
-    this.toggleShowcaseItemLoading(showcaseItem, true);
     window.open(showcaseItem.startUrl, '_blank', 'noopener,noreferrer');
     // Mark showcase item as visited immediately (persists to localStorage)
     this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order);
@@ -82,40 +81,33 @@ class MusicShowcase extends Component {
       if (showcaseItem.status === stageStatus.STATUS_COMPLETE) {
         let quizDiv;
 
-        if (this.isQuizOpen(showcaseItem)) {
+        if (this.props.activeStageData.quiz) {
           quizDiv = <div className="quiz-results">
-            <div className="collapse" onClick={() => { this.toggleQuizView(showcaseItem, false) }}>Hide Quiz Results</div>
-            <Quiz 
+            <Quiz
               quizData={this.props.activeStageData.quiz}
               quizResults={showcaseItem.results}
               inline={true}
-              editable={true} 
+              editable={true}
               saveQuiz={(questions) => {
-                this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order, questions); 
+                this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order, questions);
               } }/>
-          </div>
-        }
-        else {
-          quizDiv = <div className="quiz-results">
-            <div className="expand" onClick={() => { this.toggleQuizView(showcaseItem, true) }}>Show Quiz Results</div>
           </div>
         }
 
         return <div className="card-footer actions">
           { quizDiv }
-          <button className={ `btn btn-success ${ (this.isShowcaseItemLoading(showcaseItem)) ? 'loader' : '' }` } onClick={ () => { this.startShowcaseBt(showcaseItem); } }>▶ Review the story</button>
+          <a href={ showcaseItem.startUrl } target="_blank" rel="noopener noreferrer" className="btn btn-success">&#9654; Review the story</a>
         </div>
       }
       else {
         return <div className="card-footer actions">
-          <button className={ `btn btn-dark btn-action ${ (this.isShowcaseItemLoading(showcaseItem)) ? 'loader' : '' }` } onClick={ () => { this.startShowcaseBt(showcaseItem); } }>{ (!this.isShowcaseItemLoading(showcaseItem)) ? 'Listen to the story' : '' }</button>
+          <a href={ showcaseItem.startUrl } target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-action" onClick={ () => { this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order); } }>Listen to the story</a>
         </div>
       }
     }
     else if (showcaseItem.startUrl) {
       return <div className="card-footer actions">
-        <a href={ showcaseItem.startUrl } target="_blank" className="btn btn-dark btn-action">Listen to the story</a>
-        <p><strong>Story's Full Url:</strong> { showcaseItem.startUrl }</p>
+        <a href={ showcaseItem.startUrl } target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-action">Listen to the story</a>
       </div>
     }
   }
