@@ -134,29 +134,31 @@ stages:
     10. Left click and drag over all of the shapes on your plane, select group in the top right corner
 - name: Personalizing Bookmark
   order: 2
-  content: "[User-added image](https://ageofmakers.s3.amazonaws.com/heart-hole.png)
-  
-  1. Creating Design With Holes
-    1. Any shape can be turned into a hole by selecting the shape and clicking “Hole” in the upper right corner
-    2. Drag and drop desired shape onto workspace
-    3. Select the shape and turn it into a hole
-    4. Drag hole onto desired location on bookmark base
-    5. Left click and drag to select the bookmark base and hole(s)
-    6. While selected group hole(s) and bookmark base, by clicking “Group” in the upper right corner
-    7. Get creative and repeat the steps to create a fun custom design
-  2. Creating Design With Indents
-    1. Indentations can be created by raising the shape hold so it doesn’t go all the way through the bookmark base
-    2. To do so simply raise the shape hole 1 mm
-    3. Place in desired location on bookmark base</li><li
-    4. Group bookmark base and hole(s)"
+  content: |-
+    [User-added image](https://ageofmakers.s3.amazonaws.com/heart-hole.png)
+
+    1. Creating Design With Holes
+      1. Any shape can be turned into a hole by selecting the shape and clicking “Hole” in the upper right corner
+      2. Drag and drop desired shape onto workspace
+      3. Select the shape and turn it into a hole
+      4. Drag hole onto desired location on bookmark base
+      5. Left click and drag to select the bookmark base and hole(s)
+      6. While selected group hole(s) and bookmark base, by clicking “Group” in the upper right corner
+      7. Get creative and repeat the steps to create a fun custom design
+    2. Creating Design With Indents
+      1. Indentations can be created by raising the shape hold so it doesn’t go all the way through the bookmark base
+      2. To do so simply raise the shape hole 1 mm
+      3. Place in desired location on bookmark base
+      4. Group bookmark base and hole(s)
 - name: 3D Print It!
   order: 3
-  content: "1. Downloading File for 3D Printing
-    1. Once design is complete select “Design” from the upper left corner
-    2. Click on menu option “Download  for 3D Printing”
-    3. Select “.STL” button
-    4. The file will now appear in the downloads folder and can be opened in a 3D printer software
-  2. Sending Model to Print: talk to your teacher/volunteer to bring your creation to life!"
+  content: |-
+    1. Downloading File for 3D Printing
+      1. Once design is complete select “Design” from the upper left corner
+      2. Click on menu option “Download for 3D Printing”
+      3. Select “.STL” button
+      4. The file will now appear in the downloads folder and can be opened in a 3D printer software
+    2. Sending Model to Print: talk to your teacher/volunteer to bring your creation to life!
 
 
 # -------------------------------------------------------
@@ -1444,7 +1446,6 @@ valley: MakerMount
 content: |-
   Explore what other students have done with the game!
 # startUrl: https://docs.google.com/document/d/1D-yuD0ABFLaaa_J3s2YLOHNkNAi09UTcgf9sfZR3_9E/edit?usp=sharing
-type: embedded
 CTA: Show me!
 positionLeft: 39
 positionTop: 38
@@ -1648,12 +1649,11 @@ visibleAtAge: 0
 ---
 id: maker_project_planning
 name: Start Planning Your Project
-type: embedded
+type: kanban
 valley: MakerMount
-content: |- 
+content: |-
   Use this quest if you're the Project Manager of your team and you want to get started planning your team's Maker project.
 # startUrl: https://trello.com/b/4FaTdRJf/project-management-tool-future-trailblazers
-type: kanban
 positionLeft: 35
 positionTop: 28
 boards:
