@@ -3682,24 +3682,7 @@ quiz:
     **Don’t filter yourself, don’t worry about grammar, and write AS MUCH AS YOU CAN.**
   helpers: |-
     ```countdown
-    {
-      "minutes": 5,
-      "prompts": [
-        "What’s something you want somebody to know about your topic?",
-        "How do your friends *feel* about this topic?",
-        "What have your parents taught you about the injustice you chose?",
-        "What has school taught you about the injustice you chose?",
-        "What has school **NOT** taught you about the injustice you chose?",
-        "What are things people disagree with you about on this topic?",
-        "How has this topic showed up in your own life?",
-        "What do you think people misunderstand about this topic?",
-        "What might make somebody change their mind about this topic?",
-        "What can people do to help?",
-        "How is this topic covered in the media?",
-        "What is the history of this topic in your community?",
-        "What do you want the future to look like?"
-      ]
-    }
+    { "minutes": 5 }
     ```
   questions:
     - id: freeflow
@@ -3711,12 +3694,29 @@ quiz:
       examples: |-
         Sometimes, that’s all people need to do to get started writing their lyrics. Other times, people realize they need to do more research on their topic. 
       helpers: |-
+        **Try answering one of these prompts:**
+        - What's something you want somebody to know about your topic?
+        - How do your friends feel about this topic?
+        - What have your parents taught you about the injustice you chose?
+        - What has school taught you about the injustice you chose?
+        - What has school **NOT** taught you about the injustice you chose?
+        - What are things people disagree with you about on this topic?
+        - How has this topic showed up in your own life?
+        - What do you think people misunderstand about this topic?
+        - What might make somebody change their mind about this topic?
+        - What can people do to help?
+        - How is this topic covered in the media?
+        - What is the history of this topic in your community?
+        - What do you want the future to look like?
+
+        ---
+
         If you had trouble thinking of things to write about, you may need to:
-        - Talk to family members/friends or your teacher about this topic. 
+        - Talk to family members/friends or your teacher about this topic.
         - Do more research, that includes:
           - Find reliable resources that explore the history of this topic in your community and how it shows up today.
           - See if you can find facts, statistics, and quotes that you could use to educate your audience on your topic.
-        
+
           Then, go back and do another five-minute free write about this information and how it made you feel.
       type: freetextlong
 visibleAtAge: 1

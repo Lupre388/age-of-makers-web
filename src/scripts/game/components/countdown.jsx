@@ -132,14 +132,6 @@ export default class Countdown extends Component {
     }
   }
 
-  renderPrompt() {
-    if (this.props.prompts && this.state.currentPrompt && this.state.timerOn) {
-      return <div className="countdown-prompt">
-        <Markdown mdContent={this.state.currentPrompt} />
-      </div>
-    }
-  }
-
   render() {
     return (
       <div className="countdown">
@@ -147,7 +139,6 @@ export default class Countdown extends Component {
           <span>{ this.renderTime('minutes') }:</span><span>{ this.renderTime('seconds') }</span>
         </div>
         <div className="countdown-label">{ this.renderCoundownLabel() }</div>
-        { this.renderPrompt() }
         <audio src="/images/alarm-clock.mp3" type="audio/mpeg" ref={(ref) => { this.player = ref } }/>
       </div>
     );
