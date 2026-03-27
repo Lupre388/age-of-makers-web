@@ -15765,15 +15765,21 @@ a.dynamicLink {
 .songs .quiz-results {
   margin-bottom: 8px; }
 
-.songs .expand, .songs .collapse {
+.songs .collapse-toggle {
   cursor: pointer;
-  margin-top: 5px; }
-  .songs .expand::before, .songs .collapse::before {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  padding: 4px 0;
+  user-select: none; }
+  .songs .collapse-toggle::before {
+    content: '+ ';
     font-weight: bold; }
-  .songs .expand.expand::before, .songs .collapse.expand::before {
-    content: '+ '; }
-  .songs .expand.collapse::before, .songs .collapse.collapse::before {
+  .songs .collapse-toggle.open::before {
     content: '- '; }
+  .songs .collapse-toggle:hover {
+    color: #222; }
 
 .songs .playerWrapper {
   width: 100%;

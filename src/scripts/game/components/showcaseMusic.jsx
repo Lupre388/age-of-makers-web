@@ -82,15 +82,19 @@ class MusicShowcase extends Component {
         let quizDiv;
 
         if (this.props.activeStageData.quiz) {
+          let isOpen = this.isQuizOpen(showcaseItem);
           quizDiv = <div className="quiz-results">
-            <Quiz
+            <div className={isOpen ? "collapse-toggle open" : "collapse-toggle"} onClick={() => { this.toggleQuizView(showcaseItem, !isOpen) }}>
+              {isOpen ? 'Hide Quiz' : (showcaseItem.results ? 'Show Your Answers' : 'Answer Quiz')}
+            </div>
+            {isOpen && <Quiz
               quizData={this.props.activeStageData.quiz}
               quizResults={showcaseItem.results}
               inline={true}
               editable={true}
               saveQuiz={(questions) => {
                 this.props.changeQuestProgress(this.props.activeQuest.quest, this.props.activeStageData.order, showcaseItem.order, questions);
-              } }/>
+              } }/>}
           </div>
         }
 
