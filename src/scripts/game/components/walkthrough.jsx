@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react';
-import Joyride, { ACTIONS, EVENTS } from 'react-joyride';
+import { Joyride, ACTIONS, EVENTS } from 'react-joyride';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { isLoggedInAndLoaded, getActivePlayerData, getAge, isNewAge, isOutdatedAge } from '../../_utils';
@@ -127,7 +127,7 @@ class Walkthrough extends Component {
 
         // Examine the text in the walkthroughsResponse
         walkthroughsResponse.text().then((walkthroughsData) => {
-          let walkthroughsArray = yaml.safeLoadAll(walkthroughsData);
+          let walkthroughsArray = yaml.loadAll(walkthroughsData);
           console.log('Yaml data', walkthroughsArray);
           
           if (walkthroughsArray && walkthroughsArray[0]) {

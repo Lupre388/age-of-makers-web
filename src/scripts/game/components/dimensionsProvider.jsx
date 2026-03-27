@@ -6,19 +6,19 @@
  */
 
 import React from 'react';
-import Dimensions from 'react-dimensions';
+import { useResizeDetector } from 'react-resize-detector';
 
-class DimensionsProvider extends React.Component {
-  render() {
-    return (
-      <div>
-        {this.props.children({
-          containerWidth: this.props.containerWidth,
-          containerHeight: this.props.containerHeight,
-        })}
-      </div>
-    );
-  }
+function DimensionsProvider({ children }) {
+  const { width, height, ref } = useResizeDetector();
+
+  return (
+    <div ref={ref}>
+      {children({
+        containerWidth: width || 0,
+        containerHeight: height || 0,
+      })}
+    </div>
+  );
 }
 
-export default Dimensions()(DimensionsProvider);
+export default DimensionsProvider;

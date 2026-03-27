@@ -10,7 +10,7 @@ import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { } from '../../../actions/index';
 import { getActiveQuestData } from '../../_utils';
-import Board from '@lourenci/react-kanban'
+import Board from '@asseinfo/react-kanban'
 
 
 class Kanban extends Component {

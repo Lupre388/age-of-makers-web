@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react';
-import ReactMarkdown from 'react-markdown';
+import Markdown from 'react-markdown';
 import {connect} from 'react-redux';
 import { isLoggedInAndLoaded, getActivePlayerData } from '../../_utils';
 import CustomMessage from './customMessage';
@@ -14,33 +14,37 @@ import BandlabPlayer from './bandlabPlayer';
 import Countdown from './countdown';
 import Quiz from './quiz';
 
-class Markdown extends Component {
+class MarkdownRenderer extends Component {
   constructor(props) {
     super(props);
   }
 
-  returnMdRenderers() {
+  returnMdComponents() {
     return {
-      code: ({ language, value }) => {
+      code: ({ className, children }) => {
+        // Extract language from className (e.g. "language-warning" → "warning")
+        const language = className ? className.replace('language-', '') : '';
+        const value = String(children).replace(/\n$/, '');
+
         if (language === 'warning' || language === 'info') {
           return <CustomMessage type={language}>
             { value }
           </CustomMessage>
         }
-    
+
         if (language === 'bandlab') {
           return <BandlabPlayer musicId={value} />
         }
-    
+
         if (language === 'youtube') {
-          return <iframe 
+          return <iframe
             className="youtubeVideo embedded"
             src={`https://www.youtube.com/embed/${value}`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen />
         }
-    
+
         if (language === 'countdown') {
           try {
             let params = JSON.parse(value);
@@ -53,7 +57,7 @@ class Markdown extends Component {
             return <p>Error rendering the countdown.</p>
           }
         }
-    
+
         if (language === 'dynamicLinkFromQuestQuiz') {
           try {
             let params = JSON.parse(value);
@@ -72,7 +76,7 @@ class Markdown extends Component {
             return <p>Error rendering the dynamic link.</p>
           }
         }
-    
+
         if (language === 'quizResults') {
           try {
             let params = JSON.parse(value);
@@ -105,17 +109,15 @@ class Markdown extends Component {
             return <p>Error rendering the quiz results.</p>
           }
         }
-    
-        // Or default code snippet
-        const className = language && `language-${language}`
-        const code = React.createElement('code', className ? { className: className } : null, value)
-        return React.createElement('pre', {}, code)
+
+        // Default code snippet
+        return <pre><code className={className}>{value}</code></pre>
       },
-      image: ({ src, alt }) => {
+      img: ({ src, alt }) => {
         return (
           <img
             alt={alt}
-            src={ (src.search('http') === -1) ? src : src }
+            src={src}
           />
         );
       }
@@ -123,10 +125,9 @@ class Markdown extends Component {
   }
 
   render() {
-    return <ReactMarkdown
-      source={this.props.mdContent}
-      renderers={ this.returnMdRenderers() }
-    />;
+    return <Markdown
+      components={ this.returnMdComponents() }
+    >{this.props.mdContent}</Markdown>;
   }
 }
 
@@ -139,4 +140,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Markdown);
+export default connect(mapStateToProps)(MarkdownRenderer);
