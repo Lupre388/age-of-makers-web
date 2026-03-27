@@ -15422,15 +15422,18 @@ a.dynamicLink {
       letter-spacing: 1px;
       padding: 8px 0; }
   .aom-bubble .countdown .countdown-prompt {
-    padding: 6px 12px;
+    padding: 8px 12px;
     font-size: 11px;
-    line-height: 1.3;
-    color: #555;
-    background: rgba(255,255,255,0.7);
-    cursor: pointer;
-    border-top: 1px solid rgba(0,0,0,0.08); }
+    line-height: 1.4;
+    color: #444;
+    background: rgba(255,255,255,0.85);
+    border-top: 1px solid rgba(0,0,0,0.06);
+    font-style: italic; }
     .aom-bubble .countdown .countdown-prompt p {
       margin: 0; }
+    .aom-bubble .countdown .countdown-prompt em, .aom-bubble .countdown .countdown-prompt strong {
+      font-style: normal;
+      font-weight: 600; }
 
 @font-face {
   .aom-bubble {
@@ -16198,15 +16201,18 @@ a.dynamicLink {
     padding: 8px 0; }
 
 .countdown .countdown-prompt {
-  padding: 6px 12px;
+  padding: 8px 12px;
   font-size: 11px;
-  line-height: 1.3;
-  color: #555;
-  background: rgba(255,255,255,0.7);
-  cursor: pointer;
-  border-top: 1px solid rgba(0,0,0,0.08); }
+  line-height: 1.4;
+  color: #444;
+  background: rgba(255,255,255,0.85);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  font-style: italic; }
   .countdown .countdown-prompt p {
     margin: 0; }
+  .countdown .countdown-prompt em, .countdown .countdown-prompt strong {
+    font-style: normal;
+    font-weight: 600; }
 
 /*
  * Copyright (c) 2020, salesforce.com, inc.
