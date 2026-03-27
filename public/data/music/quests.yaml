@@ -2703,7 +2703,7 @@ content: |-
   ```bandlab
   f4285019-30ca-ea11-8b03-501ac51fd70d
   ```
-startUrl: https://www.bandlab.com/join
+startUrl: https://www.bandlab.com/sign-up
 positionLeft: 47
 positionTop: 56
 stages:
@@ -2711,7 +2711,7 @@ stages:
   content: |-
     Let's get you set up on BandLab! 💻
 
-    Go to [bandlab.com/join](https://www.bandlab.com/join) and create a free account.
+    Go to [bandlab.com/sign-up](https://www.bandlab.com/sign-up) and create a free account.
 
     You can sign up with **Google**, **Facebook**, **Apple**, or your **email address**.
 
