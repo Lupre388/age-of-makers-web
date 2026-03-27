@@ -57,10 +57,15 @@ class EmbeddedPage extends Component {
         else if (activeStageData && activeStageData.questions) {
           stageDiv = <Quiz quizData={activeStageData} saveQuiz={(questions) => { this.saveQuiz(questions) } } />
         }
-        // Default is to show content from Markdown!
+        // Default: plain content stage with a Next button
         else {
-          // TODO: Errors on stage data type unknown
-          console.error('Unknown stage type.', activeStageData);
+          stageDiv = <div className="col-sm-10 offset-sm-1" style={{ textAlign: 'center', marginTop: '24px' }}>
+            <button
+              className="btn btn-primary btn-lg"
+              onClick={() => { this.goToNextStage(activeStageData) }}>
+              Next Step
+            </button>
+          </div>
         }
 
         let questDetails = <div className={ 'col-sm-10 offset-sm-1' }>
