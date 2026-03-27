@@ -3198,13 +3198,11 @@ stages:
     - Remember the one you liked the most when practicing!
 
     ```info
-    Can't find a combinaison you like? Looking for inspiration? 
+    Can't find a combination you like? Looking for inspiration?
 
-    A simple trick is to search for "*random number generator*"" in Google, and generate 4 numbers from 1 to 6 randomly! 🔮
+    Try using a [Random Number Generator](https://www.google.com/search?q=random+number+generator+1+to+6) to generate 4 numbers from 1 to 6 randomly! 🔮
 
-    You can then use the notation system to get the related chords for those numbers. 
-
-    ![Google Random Number Generator](data/music/images/random_number_generator.png)
+    You can then use the notation system to get the related chords for those numbers.
     ```
   order: 0
 prerequisites: 
