@@ -2698,11 +2698,11 @@ content: |-
   Get started on your first music track! You'll start with music like these ones:
 
   ```bandlab
-  3360d06b-2fca-ea11-8b03-501ac51fd70d
+  8dc9119d-9eb6-ea11-9b05-501ac51f5e37
   ```
 
   ```bandlab
-  f4285019-30ca-ea11-8b03-501ac51fd70d
+  6c79ce50-8cc6-ea11-8b03-501ac51fd70d
   ```
 positionLeft: 47
 positionTop: 56
@@ -2721,12 +2721,12 @@ stages:
   order: 0
 - name: Choose a Base Track
   content: |-
-    Now let's pick a base track to start with! Click on one of these tracks to open it, then click the **Fork** button to copy it into your account:
+    Now let's pick a base track to start with! Open one of these tracks, then click the **Fork** button to copy it into your account:
 
-    - [Hip Hop Trap Beat in C Minor - 91BPM](https://www.bandlab.com/kimikbynight/without-my-cash-hip-hop-trap-beat-in-c-minor-91bpm-37df688f-75bf239?revId=3360d06b-2fca-ea11-8b03-501ac51fd70d)
-    - [Dance Beat in F minor - 122BPM](https://www.bandlab.com/kimikbynight/just-dont-dance-track-in-f-minor-122bpm-a48d7155-8deab4d?revId=3a3e7d4c-b5cb-ea11-8b03-501ac51fd70d)
-    - [RnB in E Major - 123 BPM](https://www.bandlab.com/kimikbynight/zeekanddestroy-56a985d?revId=9ac8b9db-88cc-ea11-8b03-501ac51fd70d)
-    - [Hip Hop Beat in C# Minor - 90BPM](https://www.bandlab.com/kimikbynight/hip-hop-beat-in-c-minor-90bpm-50f51b94-8b7eaaa?revId=a6475c53-31ca-ea11-8b03-501ac51fd70d)
+    - [Hip Hop Trap Beat in C Minor - 91BPM](https://www.bandlab.com/track/8ec9119d-9eb6-ea11-9b05-501ac51f5e37?revId=8dc9119d-9eb6-ea11-9b05-501ac51f5e37)
+    - [Hip Hop Beat in C# Minor - 90BPM](https://www.bandlab.com/track/897c6f54-8ac6-ea11-8b03-501ac51fd70d?revId=887c6f54-8ac6-ea11-8b03-501ac51fd70d)
+    - [Dance Beat in F minor - 122BPM](https://www.bandlab.com/track/6d79ce50-8cc6-ea11-8b03-501ac51fd70d?revId=6c79ce50-8cc6-ea11-8b03-501ac51fd70d)
+    - [RnB in E Major - 123 BPM](https://www.bandlab.com/track/5606509a-7747-e811-80c3-00155d65202b?revId=5506509a-7747-e811-80c3-00155d65202b)
 
     ```info
     Feeling inspired and rather start from scratch? Open the [Mix Editor](https://www.bandlab.com/mix-editor) to create a brand new track!
