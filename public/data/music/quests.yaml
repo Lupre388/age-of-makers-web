@@ -3100,24 +3100,24 @@ visibleAtAge: 2
 # inversions
 --- 
 id: inversions
-name: Inversions
+name: Make Your Chords More Interesting
 valley: musiccity
 content: |-
-  Learn how to get creative with your chords, by complexifying your triad a bit more.
+  Learn how to get creative with your chords, by using inversions and other techniques to add energy and depth to your progressions.
 
   ```info
-  This quest is not stricly required, but will definitely help you come up with dope chords!
+  This quest is not strictly required, but will definitely help you come up with better sounding chords!
   ```
 positionLeft: 57
 positionTop: 46.5
 type: embedded
 # CTA:
 stages:
-- name: Inversions
+- name: 10 Ways To Add Energy To Your Chords
   subtitle: |-
-    Use the same triad concept but move some notes around. 🎶✨
+    Learn inversions, voicings and other tricks to make your chords shine!
   type: video
-  youtubeVideoId: v4pgUW58Ss0
+  youtubeVideoId: 8l7Id2FpcHw
   order: 0
 visibleAtAge: 2
 prerequisites:
