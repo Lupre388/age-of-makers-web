@@ -41,9 +41,13 @@ class Quiz extends Component {
   }
 
   submitQuestion(event) {
+    event.preventDefault();
     this.setState({ loading: true, editQuiz: false });
     this.props.saveQuiz(this.state.questions, this.state.editQuiz);
-    event.preventDefault();
+    // Reset loading after a short delay to show feedback
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 600);
   }
 
   handleFormChange(e) {

@@ -15317,9 +15317,12 @@ a.dynamicLink {
         display: none; }
     .aom-bubble .quizWrapper .quizHeader {
       font-weight: bold;
-      margin-bottom: 20px; }
-    .aom-bubble .quizWrapper .submitWrapper {
+      font-size: 1.2em;
+      margin-bottom: 24px;
       text-align: center; }
+    .aom-bubble .quizWrapper .submitWrapper {
+      text-align: center;
+      margin-top: 24px; }
     .aom-bubble .quizWrapper.inline .quizForm label {
       text-align: left; }
     .aom-bubble .quizWrapper.inline .quizForm .form-text {
@@ -15328,10 +15331,13 @@ a.dynamicLink {
       margin-top: 10px; }
     .aom-bubble .quizWrapper .quizForm {
       margin-top: 10px; }
+      .aom-bubble .quizWrapper .quizForm .question.row {
+        margin-bottom: 24px; }
       .aom-bubble .quizWrapper .quizForm label {
         white-space: pre-wrap;
         font-size: 14px;
-        text-align: right; }
+        text-align: left;
+        margin-bottom: 6px; }
         .aom-bubble .quizWrapper .quizForm label p {
           display: inline; }
         .aom-bubble .quizWrapper .quizForm label.required::before {
@@ -16059,9 +16065,12 @@ a.dynamicLink {
       display: none; }
   .quizWrapper .quizHeader {
     font-weight: bold;
-    margin-bottom: 20px; }
-  .quizWrapper .submitWrapper {
+    font-size: 1.2em;
+    margin-bottom: 24px;
     text-align: center; }
+  .quizWrapper .submitWrapper {
+    text-align: center;
+    margin-top: 24px; }
   .quizWrapper.inline .quizForm label {
     text-align: left; }
   .quizWrapper.inline .quizForm .form-text {
@@ -16070,10 +16079,13 @@ a.dynamicLink {
     margin-top: 10px; }
   .quizWrapper .quizForm {
     margin-top: 10px; }
+    .quizWrapper .quizForm .question.row {
+      margin-bottom: 24px; }
     .quizWrapper .quizForm label {
       white-space: pre-wrap;
       font-size: 14px;
-      text-align: right; }
+      text-align: left;
+      margin-bottom: 6px; }
       .quizWrapper .quizForm label p {
         display: inline; }
       .quizWrapper .quizForm label.required::before {
