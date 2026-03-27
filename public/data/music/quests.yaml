@@ -2692,6 +2692,7 @@ visibleAtAge: 1
 ---
 id: bandlab_start
 name: Start Your First Track
+type: embedded
 valley: musiccity
 content: |-
   Get started on your first music track! You'll start with music like these ones:
@@ -2699,11 +2700,10 @@ content: |-
   ```bandlab
   3360d06b-2fca-ea11-8b03-501ac51fd70d
   ```
-  
+
   ```bandlab
   f4285019-30ca-ea11-8b03-501ac51fd70d
   ```
-startUrl: https://www.bandlab.com/sign-up
 positionLeft: 47
 positionTop: 56
 stages:
@@ -2882,6 +2882,7 @@ prerequisites:
 ---
 id: scales_practice
 name: Practice Finding Scales
+type: embedded
 valley: musiccity
 content: |-
   Time to put Usean's lesson on Notes & Scale to practice.
@@ -2970,6 +2971,7 @@ prerequisites:
 ---
 id: chords_practice
 name: Practice Playing Chords
+type: embedded
 valley: musiccity
 content: |-
   You've learned about chords in the previous quest, and how they can be *happy* or *sad*.
@@ -3047,6 +3049,7 @@ prerequisites:
 ---
 id: notation_practice
 name: Practice the Number System
+type: embedded
 valley: musiccity
 content: |-
   Put your new skill to practice by going from numbers to music, and see if you can inspire yourself from songs you know.

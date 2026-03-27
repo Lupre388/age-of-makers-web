@@ -15,6 +15,7 @@
 --- 
 id: threeD_keychain
 name: Create a 3D Printed Keychain
+type: embedded
 valley: ThreeD
 content: |-
   Learn the basics of [Tinkercad](https://tinkercad.com), an online 3D designing tool.
@@ -92,6 +93,7 @@ prerequisites:
 --- 
 id: threeD_bookmark
 name: 3D Printed Bookmark
+type: embedded
 valley: ThreeD
 content: |-
   Design and print your own bookmark. You will never forget where you stopped in your books anymore!
@@ -164,6 +166,7 @@ stages:
 --- 
 id: threeD_penguin
 name: Create a Glowing Penguin
+type: embedded
 valley: ThreeD
 content: |-
   Design a penguin that will glow using a battery cell and a LED light.  
@@ -208,6 +211,7 @@ stages:
 --- 
 id: threeD_diamond_ring
 name: Design a diamond ring
+type: embedded
 valley: ThreeD
 content: |-
   Learn how to create a [Diamond Ring](https://www.tinkercad.com/learn/overview/OVSX6OGIYKFZ1E9;collectionId=O2C1PXBIQ2KHCOD) in 3D.  
@@ -257,6 +261,7 @@ stages:
 --- 
 id: threeD_bat_button
 name: Create a "Bat-Button"
+type: embedded
 valley: ThreeD
 content: |-
   Start from scratch, and design a neat "Bat-Button".  
@@ -305,6 +310,7 @@ stages:
 --- 
 id: threeD_house
 name: Make a simple 1-story house
+type: embedded
 valley: ThreeD
 content: |-
   Design your own house from scratch in Tinkercad.  
@@ -419,6 +425,7 @@ stages:
 --- 
 id: threeD_bee
 name: Make a Moving Bee
+type: embedded
 valley: ThreeD
 content: |-
   Design, 3D print and assemble a moving bee!  
@@ -467,6 +474,7 @@ stages:
 --- 
 id: threeD_monkey
 name: Make a Waving Monkey
+type: embedded
 valley: ThreeD
 content: |-
   Use a motor to make a monkey wave its hands.  
@@ -525,6 +533,7 @@ stages:
 ---
 id: scratch_get_started
 name: Get Started with Scratch
+type: embedded
 valley: Coding
 content: |-
   In this tutorial, you'll learn the basics of coding with Scratch, so you can make your own stories, games and animations!
@@ -557,6 +566,7 @@ visibleAtAge: 0
 ---
 id: scratch_name
 name: Animate a Name
+type: embedded
 valley: Coding
 content: |-
   Animate the letters of your name, initials, or favorite word.
@@ -586,6 +596,7 @@ visibleAtAge: 1
 ---
 id: scratch_music
 name: Make Music
+type: embedded
 valley: Coding
 content: |-
   Choose instruments, add sounds, and press keys to play music.
@@ -615,6 +626,7 @@ visibleAtAge: 1
 ---
 id: scratch_video_sensing
 name: Video Sensing
+type: embedded
 valley: Coding
 content: |-
   Interact with a project using the Video Sensing extension.
@@ -644,6 +656,7 @@ visibleAtAge: 1
 ---
 id: scratch_imagine
 name: Imagine a World
+type: embedded
 valley: Coding
 content: |-
   In this tutorial, you'll be able to imagine a world where anything is possible!
@@ -674,6 +687,7 @@ visibleAtAge: 1
 ---
 id: scratch_story
 name: Create a Story
+type: embedded
 valley: Coding
 content: |-
   Choose characters, add conversation, and bring your story to life.
@@ -703,6 +717,7 @@ visibleAtAge: 1
 ---
 id: scratch_animate
 name: Animate a Character
+type: embedded
 valley: Coding
 content: |-
   Bring characters to life with animation.
@@ -732,6 +747,7 @@ visibleAtAge: 1
 ---
 id: scratch_chase_game
 name: Make a Chase Game
+type: embedded
 valley: Coding
 content: |-
   Make a game where you chase a character to score points.
@@ -761,6 +777,7 @@ visibleAtAge: 1
 ---
 id: scratch_fly
 name: Make It Fly
+type: embedded
 valley: Coding
 content: |-
   Choose any character and make it fly!
@@ -790,6 +807,7 @@ visibleAtAge: 1
 ---
 id: scratch_pong
 name: Pong Game
+type: embedded
 valley: Coding
 content: |-
   Make a bouncing ball game with sounds, points, and other effects.
@@ -823,6 +841,7 @@ visibleAtAge: 1
 ---
 id: elec_nametag
 name: Electronic Nametag
+type: embedded
 valley: Electronics
 content: |-
   Create a electronic nametag with a Mico:bit.  
@@ -868,6 +887,7 @@ visibleAtAge: 0
 ---
 id: elec_smiley
 name: Code a Smiley badge
+type: embedded
 valley: Electronics
 content: |-
   Code the buttons on the micro:bit to show that it's happy or sad.  
@@ -915,6 +935,7 @@ visibleAtAge: 1
 ---
 id: elec_reaction_time
 name: Reaction Time Game
+type: embedded
 valley: Electronics
 content: |-
   Make a reaction game experiment that responds to your body’s conductivity!
@@ -959,6 +980,7 @@ visibleAtAge: 1
 ---
 id: elec_stopwatch
 name: Code a stopwatch
+type: embedded
 valley: Electronics
 content: |-
   This project turns the micro:bit into a simple stopwatch. Pressing **B** will start the timer. Pressing **A** will add 1 second to the timer. Let’s get started.
@@ -1029,6 +1051,7 @@ visibleAtAge: 1
 ---
 id: elec_flipcoin
 name: Flip Coin
+type: embedded
 valley: Electronics
 content: |-
   Let’s create a coin flipping program to simulate a real coin toss.  
@@ -1078,6 +1101,7 @@ visibleAtAge: 1
 ---
 id: elec_highfive
 name: Create an High-Five machine
+type: embedded
 valley: Electronics
 content: |-
   **Build your own High-Five machine!!**  
@@ -1173,6 +1197,7 @@ visibleAtAge: 1
 ---
 id: elec_microchat
 name: Create a Micro:chat
+type: embedded
 valley: Electronics
 content: |-
   Use the radio to send and receive messages with other micro:bit.  
@@ -1208,6 +1233,7 @@ visibleAtAge: 1
 ---
 id: elec_acceleration
 name: Plot the Acceleration
+type: embedded
 valley: Electronics
 content: |-
   Use the motion sensor, called Accelerometer, to show how much you're moving the micro:bit.  
@@ -1257,6 +1283,7 @@ visibleAtAge: 1
 ---
 id: elec_rock_paper_game
 name: Create a Rock Paper Scissors Game
+type: embedded
 valley: Electronics
 content: |-
   Use the accelerometer and the screen to build a **Rock Paper Scissors** game that you can play with your friends!
@@ -1291,6 +1318,7 @@ visibleAtAge: 1
 ---
 id: elec_light
 name: Show the Light Level
+type: embedded
 valley: Electronics
 content: |-
   Use the light sensor in the microbit to show how much light there is.  
@@ -1333,6 +1361,7 @@ visibleAtAge: 1
 ---
 id: elec_headphones
 name: Hack your Headphones
+type: embedded
 valley: Electronics
 content: |-
   Build your own micro:bit music player using headphones.  
@@ -1410,6 +1439,7 @@ visibleAtAge: 1
 ---
 id: students_showcase
 name: What have other students done?
+type: embedded
 valley: MakerMount
 content: |-
   Explore what other students have done with the game!
@@ -1618,6 +1648,7 @@ visibleAtAge: 0
 ---
 id: maker_project_planning
 name: Start Planning Your Project
+type: embedded
 valley: MakerMount
 content: |- 
   Use this quest if you're the Project Manager of your team and you want to get started planning your team's Maker project.
