@@ -33,7 +33,15 @@ export default defineConfig({
       }
     })
   ],
+  resolve: {
+    alias: {
+      'element-resize-event': '/src/patches/element-resize-event.js'
+    }
+  },
   build: {
-    chunkSizeWarningLimit: 1200
+    chunkSizeWarningLimit: 1200,
+    commonjsOptions: {
+      transformMixedEsModules: true
+    }
   }
 })
