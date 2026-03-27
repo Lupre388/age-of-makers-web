@@ -14900,9 +14900,9 @@ a.dynamicLink {
     padding: 0;
     overflow: none; }
     .aom-bubble.bubbleClosed .box-header:hover .box-icon {
-      background-image: url("https://ageofmakers.herokuapp.com/images/maximize.svg") !important; }
+      background-image: url("/images/maximize.svg") !important; }
   .aom-bubble .box-header:hover .box-icon {
-    background-image: url("https://ageofmakers.herokuapp.com/images/minimize.svg") !important; }
+    background-image: url("/images/minimize.svg") !important; }
   .aom-bubble input {
     display: none; }
   .aom-bubble button, .aom-bubble .button, .aom-bubble .btn {
@@ -15026,7 +15026,7 @@ a.dynamicLink {
       top: 0;
       width: 50px;
       height: 50px;
-      background: url("https://ageofmakers.herokuapp.com/images/minimize.svg") no-repeat center center;
+      background: url("/images/minimize.svg") no-repeat center center;
       background-size: 30px 30px;
       transition: background-size 80ms ease-in-out; }
   .aom-bubble .exit-btn {
@@ -15038,7 +15038,7 @@ a.dynamicLink {
     bottom: 10px;
     left: 15px;
     border-radius: 4px;
-    background-image: url("https://ageofmakers.herokuapp.com/images/exit.svg");
+    background-image: url("/images/exit.svg");
     background-repeat: no-repeat;
     background-position: 1px 3px;
     background-size: 25px 25px;
