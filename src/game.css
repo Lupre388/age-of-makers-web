@@ -15670,6 +15670,33 @@ a.dynamicLink {
       line-height: 1.7;
       white-space: pre-wrap;
       color: #555; }
+  .fullpage .aom-info,
+  .fullpage .aom-warning {
+    background: #f8f6f0;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555; }
+    .fullpage .aom-info p,
+    .fullpage .aom-warning p {
+      margin-bottom: 6px; }
+    .fullpage .aom-info p:last-child,
+    .fullpage .aom-warning p:last-child {
+      margin-bottom: 0; }
+    .fullpage .aom-info ul,
+    .fullpage .aom-warning ul {
+      margin: 6px 0;
+      padding-left: 18px; }
+    .fullpage .aom-info li,
+    .fullpage .aom-warning li {
+      margin-bottom: 2px; }
+  .fullpage .aom-info {
+    border-left: 3px solid #61B136; }
+  .fullpage .aom-warning {
+    border-left: 3px solid #FF5335;
+    color: #8b4513; }
   .fullpage .btn-close-embedded {
     position: fixed;
     right: 15px;
