@@ -51,11 +51,15 @@ class Video extends Component {
   }
 
   _onYoutubeReady(event) {
-    // Set access to player via the state from the event handlers, event.target
-    // console.log('Video initiated', event, event.data);
-    this.setState({
-      ytPlayer: event.target,
-    });
+    if (event && event.target) {
+      this.setState({
+        ytPlayer: event.target,
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    this.setState({ ytPlayer: null });
   }
 
   _onYoutubeStateChanged(event) {
